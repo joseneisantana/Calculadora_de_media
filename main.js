@@ -5,7 +5,7 @@ const atividade =[];
 const notas  =[]
 const spamAprovado ='<span class =" resultado aprovado">Aprovado</span>';
 const spamReprovado ='<span class =" resultado Reprovado">Reprovado</span>';
-const notaMinima= parseFloat(prompt('Digite a nota minima :'));
+const notaMinima= parseFloat(prompt('Digite a not minima :'));
 
 let linhas = '';
 form.addEventListener('submit', function(e){
@@ -53,7 +53,7 @@ function atualizaTabela(){
 
 function atualizaMediaFinal(){
   const mediaFinal = calculaMediaFinal();
-  document.getElementById('media-final-valor').innerHTML =mediaFinal;
+  document.getElementById('media-final-valor').innerHTML =mediaFinal.toFixed(2);
   document.getElementById('media-final-resultado').innerHTML =mediaFinal >= notaMinima ? spamAprovado : spamReprovado;
   
 }
