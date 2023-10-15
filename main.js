@@ -5,7 +5,7 @@ const atividade =[];
 const notas  =[]
 const spamAprovado ='<span class =" resultado aprovado">Aprovado</span>';
 const spamReprovado ='<span class =" resultado Reprovado">Reprovado</span>';
-const notaMinima= parseFloat(prompt('Digite a not minima :'));
+const notaMinima= parseFloat(prompt('Digite a nota minima :'));
 
 let linhas = '';
 form.addEventListener('submit', function(e){
